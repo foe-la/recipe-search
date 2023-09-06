@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
 
 function App() {
+
+  const findRecipe = (e) => {
+    // const recipeName = e.target.value;
+    e.preventDefault();
+    console.log("recipeName");
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="App-Name">
+        <h1> Recipe Finder</h1>
       </header>
+      <Form findRecipe={ findRecipe } />
     </div>
   );
 }
