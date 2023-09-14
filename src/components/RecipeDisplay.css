@@ -1,0 +1,19 @@
+ .product-content-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+    
+}
+.productContent {
+    margin: 1.5%;
+}
+.productImage {
+    /* align-content: center; */
+    display: flex;
+    margin-bottom: 1px;
+    box-shadow: 10px 10px rgb(226, 218, 218);
+    border-radius: 10%;
+    /* flex-wrap: wrap; */
+
+}
